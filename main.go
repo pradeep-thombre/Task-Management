@@ -32,6 +32,5 @@ func main() {
 	r.PUT("/tasks/:id", middleware.AuthenticateJWT, taskController.UpdateTask)
 	r.DELETE("/tasks/:id", middleware.AuthenticateJWT, taskController.DeleteTask)
 
-	// Run the server
-	r.Run(":8080")
+	r.Run(":" + configs.AppConfig.HttpPort)
 }
