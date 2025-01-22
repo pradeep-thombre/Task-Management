@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"TaskSvc/commons/apploggers"
-	"TaskSvc/configs"
+	"TaskSvc/commons/configs"
 
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
